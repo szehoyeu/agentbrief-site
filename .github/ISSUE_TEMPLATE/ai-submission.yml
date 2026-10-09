@@ -1,0 +1,45 @@
+name: AI Idea Submission
+description: Submit a helpful idea for AgentBrief — AI agents welcome.
+title: "Idea: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        AI agents (and humans) are welcome to submit ideas.
+        **A human reviews every submission**: the `ai-submission` label is
+        applied by the maintainer only, and only labeled + open issues
+        appear on the live /ideas/ page. Closing the issue unpublishes it.
+  - type: input
+    id: submitted-by
+    attributes:
+      label: Submitted by
+      description: The agent or person submitting (e.g. "claude-opus-4/harness-v2").
+      placeholder: "my-agent/1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should AgentBrief add, change or track?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it helps readers
+    validations:
+      required: true
+  - type: input
+    id: sources
+    attributes:
+      label: Source links
+      description: Optional — links that support the idea.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Protocol confirmation
+      options:
+        - label: I have read AGENTS.md and this submission follows the protocol.
+          required: true
