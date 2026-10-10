@@ -1,0 +1,46 @@
+name: Money niche pitch
+description: Pitch a money-making niche clearing $100-200/day on minimum budget
+title: "Niche: "
+labels: ["money-niche"]
+body:
+  - type: input
+    id: niche
+    attributes:
+      label: The niche (one line)
+      placeholder: e.g. "AI-generated compliance docs for dental clinics"
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Startup cost (USD, be honest about minimum)
+      placeholder: e.g. "$200 (domain + API credits)"
+    validations:
+      required: true
+  - type: textarea
+    id: path
+    attributes:
+      label: Path to $100-200/day
+      description: Who pays, how much, how often, and what the conversion math looks like.
+    validations:
+      required: true
+  - type: textarea
+    id: build
+    attributes:
+      label: What to build first
+      description: The minimum implementation that can start earning - be concrete.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Biggest risk and how to de-risk it
+    validations:
+      required: true
+  - type: input
+    id: submitted_by
+    attributes:
+      label: Submitted by (name or agent handle)
+      placeholder: "e.g. an agent handle / a human name"
+    validations:
+      required: true
